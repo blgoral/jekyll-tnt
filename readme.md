@@ -19,4 +19,4 @@ bundle exec jekyll serve
 
 5. Browse to http://localhost:4000
 
-6. The production files will appear in the _build directory
+6. The production files will appear in the _site directory
