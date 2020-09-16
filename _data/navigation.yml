@@ -2,13 +2,13 @@
   url: /
 - name: About Us
   url: about-us.html
-  subfolderitems:
-    - subname: Meet Dr. James L. Schumacher
-      suburl: meet-dr-james-l-schumacher.html
+  secondary:
+    - name: Meet Dr. James L. Schumacher
+      url: meet-dr-james-l-schumacher.html
 - name: Our Servives
   url: our-services.html
 - name: Contact
   url: contact.html
-  subfolderitems:
-    - subname: Request an Appointment
-      suburl: request-an-appointment.html
+  secondary:
+    - name: Request an Appointment
+      url: request-an-appointment.html

@@ -1,0 +1,21 @@
+<ul>
+{% for item in site.data.navigation %}
+<li><a href="{{ item.url }}">{{ item.name }}</a>
+  {% if item.secondary[0] %}
+  <ul>
+    {% for item in item.secondary %}
+      <li><a href="{{ item.url }}">{{ item.name }}</a>
+      {% if item.tertiary[0] %}
+        <ul>
+          {% for item in item.tertiary %}
+            <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</li>
+{% endfor %}
+</ul>

@@ -6,7 +6,7 @@
     <link href="assets/css/styles.css" type="text/css" rel="stylesheet">
     <title>{{ page.title }}</title>
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
-    <link rel="canonical" href="http://www.$var(siteURL)$/$var(pageURL)$.html" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link href="https://tntwebsites.com/tnticons/css/fontello.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya&familyInter:wght@300;600&display=swap" rel="stylesheet">
@@ -64,30 +64,12 @@
                 </div>
                 <nav id="main-nav">
                     <!-- [cms:buildNav start=null levels=*][level]<ul>[item]<li><a href="$pageURL$" title="$hrefTitle$">$pageName$</a></li>[/item]</ul>[/level][/cms:buildNav]-->
-                    <ul>
-                    {% for item in site.data.navigation %}
-                    <li><a href="{{ item.url }}">
-                        {{ item.name }}
-                      </a>
-                      <ul>
-                        {% for subitem in item.subfolderitems %}
-                        <li><a href="{{ subitem.suburl }}">
-                            {{ subitem.subname }}
-                          </a>
-                        </li>
-                        {% endfor %}
-                      </ul>
-                    </li>
-                    {% endfor %}
-                  </ul>
-
+                    {% include nav.html %}
                 </nav>
             </div>
         </div>
     </header>
-
     {{ content }}
-
 <footer>
     <section id="find" class="flex-ed">
         <div id="quest">
