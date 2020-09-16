@@ -1,0 +1,75 @@
+---
+layout: internal
+pageName: Our Services
+title: Our Services
+meta: Our Services
+---
+<h1>
+	Request an Appointment &ndash; Jacksonville, FL</h1>
+<h2 id="append">
+	Come Experience a Different Kind of Dentistry</h2>
+<p>
+	We can&rsquo;t wait to give you the smile you&rsquo;ve always wanted and the dental experience you deserve, and it all starts by requesting an appointment using our convenient form below. Fill it in, let us know when you&rsquo;re available, and click &ldquo;Submit.&rdquo; After that, we&rsquo;ll take care of the rest. A member of our team will reach out to you within a day or so to help you select a time for your visit. We look forward to getting to know you and showing you what dental care <em>should </em>be like. Be sure to give us a call if you have any questions ahead of your appointment!</p>
+  <form class="styled-form" method="post" action="https://tnt-adder.herokuapp.com/submit/04e46480-82f0-4b3f-97f1-b74ba55511e4">
+                          <div class="drei">
+                              <span class="input-content">
+                                  <input class="input__field" name="Name" type="text" required="true"/>
+                                  <label class="input__label"><span class="input__label-content">Full Name <strong>Jane Smith</strong></span></label>
+                              </span>
+
+                              <span class="input-content">
+                                  <input class="input__field phone-input" name="Phone" type="text" pattern="(.){10,}"  required title="10 characters minimum" required="true"/>
+                                  <label class="input__label"><span class="input__label-content">Phone Number <strong>(555) 555-5555</strong></span></label>
+                            </span>
+
+                              <span class="input-content">
+                                  <input class="input__field" name="Email" type="email" required="true"/>
+                                  <label class="input__label"><span class="input__label-content">Email Address <strong>jane@email.com</strong></span></label>
+                              </span>
+                          </div>
+                          <div class="drei">
+                              <div class="inline options">
+                                  <label>Are you...</label>
+                                  <span><input name="PatientType[]" type="radio" value="New" /> A New Patient </span>
+                                  <span><input name="PatientType[]" type="radio" value="Existing" /> An Existing Patient </span>
+
+                              </div>
+                              <div class="inline options day">
+                                  <label>Preferred day of the week</label>
+                                  <span><input name="day[]" type="checkbox" value="Monday" /> Monday </span>
+                                  <span><input name="day[]" type="checkbox" value="Tuesday" /> Tuesday </span>
+                                  <span><input name="day[]" type="checkbox" value="Wednesday" /> Wednesday </span>
+                                  <span><input name="day[]" type="checkbox" value="Thursday" /> Thursday </span>
+
+
+
+                              </div>
+                              <div class="inline options time">
+                                  <label>Preferred method of communication</label>
+                                  <span><input name="time[]" type="checkbox" value="phone" /> Phone </span>
+                                  <span><input name="time[]" type="checkbox" value="Text" /> Text </span>
+                                  <span><input name="time[]" type="checkbox" value="email" /> Email </span>
+                              </div>
+                          </div>
+                          <div class="drei">
+                              <div class="inline options">
+                                  <label>How did you hear about us?</label>
+                                  <span><input name="hear[]" type="checkbox" value="Search Engine" /> Search Engine </span>
+                                  <span><input name="hear[]" type="checkbox" value="Family/Friend" /> Family/Friend </span>
+                                  <span><input name="hear[]" type="checkbox" value="Promotion" /> Promotion </span>
+                                  <span><input name="hear[]" type="checkbox" value="Social Media" /> Social Media </span>
+                                  <span><input name="hear[]" type="checkbox" value="Other" /> Other </span>
+                              </div>
+                              <div class="inline">
+                                  <label>What are you interested in?</label>
+                                  <textarea name="Interests" aria-label="Interests" placeholder="I am interested in…"></textarea>
+                              </div>
+                              <div class="inline">
+                                  <label>Do you have any questions or comments?</label>
+                                  <textarea name="Questions/Comments" aria-label="Questions" placeholder="Type your questions or comments here."></textarea>
+                              </div>
+                          </div>
+                          <button class="btn">Submit Request</button>
+                          <input name="_subject" type="hidden" value="Request Appointment" />
+                          <input name="_redirect" type="hidden" value="thanks.html" />
+                      </form>

@@ -1,0 +1,62 @@
+#find {background-color: #f2f2f2; max-width: 1280px; margin: 0 auto 0; position: relative; z-index: 1;
+    &:before {content: ''; position: absolute; left: -1000px; right: -1000px; top: -5px; bottom: 50%; z-index: -1; background-color: #fff;}
+}   
+#map {display: none; position: relative; margin: 0; flex: 1 1 50%;
+    iframe {height: 100%; display: block; width: 100%; }
+}
+#quest { background-color: #f2f2f2; padding: 30px 10px; flex: 1 1 100%; text-align: center;position: relative; z-index: 1;
+    form {  max-width: 95%; margin: 20px auto;}
+    textarea {height: 125px;}
+    .contain {display: flex; justify-content: space-between;
+        input:nth-of-type(2) {margin: 0 10px 10px;}
+    }
+    .btn {max-width: 350px;;}
+}
+.page_index {
+    #quest {flex: 0 1 450px;padding: 50px 10px; 
+        form {max-width: 300px;}
+        .contain {display: block;}
+        input:nth-of-type(2) {margin: 0 auto 10px;}
+        textarea {height: 95px;}
+    }
+    #map {display: block;}
+}
+/* --- simple form --- */
+.simple {line-height: 1; font-size: 0; margin: 0 auto; text-align: center; background-color: #f2f2f2;
+    input, textarea  {-webkit-box-sizing: border-box!important;box-sizing: border-box!important; border: 0; border-radius: 0; line-height: 1; font-size: 18px;
+        width:100%; max-width: 100%; padding: 0 20px; margin-bottom: 10px; height: 50px; color: $text; background-color: #fff; border-radius: 30px;}
+    textarea {height: 130px; padding: 14px 20px;}
+    input:focus, textarea:focus {outline: 0; box-shadow: 0 0 0 2px $primary; color: $tertiary;}
+    .btn {width: 100%; margin: 0 auto;}
+}
+::placeholder {color: $text}
+::-webkit-input-placeholder {color: $text }
+
+/* --- social bucket --- */
+.social {font-size: 0; text-align: center; margin: 10px auto; display: flex; justify-content: space-around;
+    a {position: relative; display: inline-block; margin: 5px; font-size: 18px; color: #fff; 
+    }
+    a:hover {color: $primary;}
+}
+
+
+/* ------------- footer ------------- */
+
+footer { background-color:$tertiary; color: #fff;
+    a {color: #fff; &:hover {color: $primary}}
+    .logo {display: block; margin-bottom: 10px;}
+    .pho { font: 600 28px/1.2 $font; margin: 15px auto; display: block;  position: relative; padding-left: 30px;}
+    .phy {  font: 300 19px/1.2 $font; margin: 20px auto; display: block;position: relative; padding-left: 30px;}
+    .pho i, .phy i {color: $primary; position: absolute; left: 0; top: 0; }
+    .pho i {left: -7px;}
+    .hours {margin: 0;}
+    .hours p{color: #fff; }
+    .social {margin: 0;}
+}
+
+#fo-contents {display: flex; justify-content: space-around;  margin: auto; position: relative; max-width: 1350px; padding: 80px 10px 50px; }
+.fo-info {flex: 0 1 auto;}
+.ft-btm {display: flex; justify-content: space-between; max-width: 1250px; margin: auto; padding: 10px;    align-items: center;}
+
+
+#copy { font: 400 15px/1.5 $font; padding: 20px 0; text-align: center; order: -1;}

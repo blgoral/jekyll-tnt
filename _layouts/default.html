@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="{{ page.meta }}" name="Description" />
+    <link href="assets/css/styles.css" type="text/css" rel="stylesheet">
+    <title>{{ page.title }}</title>
+
+    <link rel="canonical" href="http://www.$var(siteURL)$/$var(pageURL)$.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link href="https://tntwebsites.com/tnticons/css/fontello.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&familyInter:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon-57.png" />
+    <link rel="icon" href="assets/images/favicon.png">
+    <meta name="apple-mobile-web-app-title" content="" />
+    <script async src='https://tag.simpli.fi/sifitag/d0839950-0d38-0137-dfb5-06a9ed4ca31b'></script>
+</head>
+
+<body class="page_{{ page.pageName | slugify }}">
+    <div id="fixed-tabs">
+        <a href="request-an-appointment.html" class="ra">
+            <span><i class="icon-calendar-1"></i> <em>Request</em></span>
+            <span>Request<strong> an Appointment</strong></span>
+        </a>
+        <a href="tel:+19043883559" class="call">
+            <span><i class="icon-phone"></i><em>Call</em></span>
+            <span>Call <strong>Us</strong></span>
+        </a>
+        <a href="https://goo.gl/maps/1z11D5yv8tvEN2jR8" target="_blank" class="map">
+            <span><i class="icon-location"></i><em>Map</em></span>
+            <span><strong>View </strong>Map</span>
+        </a>
+   </div>
+
+
+    <header>
+        <div class="skip-link"> <a href='#main' id="main-link">Skip to content</a>   </div>
+        <div id="hd-top">
+            <div class="flex-row">
+                <a href="">Accepting New Patients</a>
+                <span>•</span>
+                <a href="">Read Our COVID-19 Safety Protocols <i class="icon-right"></i></a>
+            </div>
+        </div>
+        <div id="hd-contents" class="place-nav">
+            <a class="logo" href="index.html" aria-label="home page">
+             <svg xmlns="http://www.w3.org/2000/svg" width="211" height="150" viewBox="0 0 211 150"><g><path fill="#fff" d="M210.027 58.232L105.597.09a.706.706 0 0 0-.691 0L.366 58.232c-.64.355-.388 1.331.345 1.331h82.28c-.01-.272-.04-.54-.04-.813 0-12.287 9.958-22.247 22.245-22.247 12.286 0 22.246 9.96 22.246 22.247 0 .274-.032.54-.042.813h82.28c.733 0 .987-.974.347-1.33z"/></g><g><path fill="#fff" d="M149.775 124.415c-1.56 2.203-3.727 3.925-6.498 5.161-2.774 1.236-5.943 1.857-9.507 1.857-2.08 0-3.986-.187-5.72-.558-1.733-.372-3.156-.78-4.27-1.224-1.113-.447-1.671-.694-1.671-.744l-.371-.742c.049-.298.15-1.04.297-2.228.148-1.19.284-2.736.409-4.643.122-1.905.185-3.923.185-6.052l3.342-.372c0 3.714.248 6.462.743 8.244.494 1.783 1.412 3.009 2.748 3.677 1.338.668 3.39 1.001 6.165 1.001 3.118 0 5.618-.729 7.5-2.19 1.882-1.46 2.822-3.452 2.822-5.978 0-1.485-.508-2.821-1.522-4.01a14.856 14.856 0 0 0-3.602-3.046c-1.387-.841-3.442-1.98-6.165-3.416-2.575-1.337-4.678-2.562-6.312-3.676a16.594 16.594 0 0 1-4.122-3.973c-1.114-1.534-1.67-3.316-1.67-5.347 0-2.575.754-4.914 2.264-7.019 1.51-2.105 3.565-3.763 6.165-4.976 2.598-1.212 5.483-1.818 8.652-1.818 1.98 0 3.811.136 5.496.407 1.682.273 3.02.556 4.01.855.99.297 1.608.494 1.856.594l.224.445c-.05.296-.175.992-.371 2.08-.198 1.089-.423 2.6-.67 4.529a109.987 109.987 0 0 0-.594 5.942l-2.895.297-.447-.37c.049-.198.1-.656.15-1.375.047-.717.073-1.547.073-2.488 0-2.623-.644-4.431-1.931-5.421-1.288-.99-3.59-1.486-6.907-1.486-2.723 0-4.964.68-6.721 2.042-1.758 1.363-2.636 3.058-2.636 5.088 0 1.98.853 3.701 2.562 5.162 1.708 1.46 4.22 3.057 7.538 4.789 3.218 1.634 5.668 2.983 7.352 4.048a18.364 18.364 0 0 1 4.456 3.974c1.287 1.584 1.932 3.415 1.932 5.495 0 2.774-.78 5.261-2.34 7.465zM116.428 122c-.47 2.774-.879 5.695-1.224 8.764l-.373.445c-1.435-.1-4.393-.235-8.875-.409-4.48-.174-8.181-.259-11.102-.259-2.327 0-4.445.098-6.35.298-1.906.196-3.107.346-3.602.445l.446-3.417c1.93-.297 3.255-.878 3.972-1.744.718-.866 1.078-2.365 1.078-4.494l.074-31.192c0-1.584-.185-2.648-.556-3.193-.373-.545-1.104-.818-2.192-.818-.496 0-.991.025-1.485.074-.495.05-.842.075-1.04.075l-.148-.297.519-3.268c.595.05 1.708.1 3.343.148 1.633.05 3.291.074 4.975.074 1.337 0 2.86-.086 4.568-.26 1.708-.173 2.834-.309 3.379-.408l-.297 3.342c-1.635.199-2.76.52-3.38.967-.619.444-.991.965-1.112 1.559-.125.594-.261 2.054-.41 4.381-.296 4.208-.52 9.012-.667 14.41-.15 5.397-.225 10.148-.225 14.258 0 1.781.15 3.058.446 3.825.298.767.856 1.275 1.671 1.523.818.246 2.215.37 4.197.37 3.02 0 5.236-.247 6.646-.743 1.412-.494 2.476-1.458 3.194-2.897.718-1.434 1.374-3.736 1.968-6.906l3.268-.371.223.37a420.07 420.07 0 0 0-.929 5.348zM76.733 85.906c-1.239.199-2.13.421-2.674.67-.545.246-.929.63-1.152 1.15-.222.52-.359 1.325-.407 2.413-.2 4.605-.384 9.952-.558 16.042a2489.14 2489.14 0 0 0-.408 15.745c-.05 5.05-1.029 9.098-2.934 12.143-1.907 3.046-4.964 5.432-9.172 7.167l-1.262-2.452.222-.594c2.03-1.237 3.602-2.537 4.717-3.898 1.113-1.362 1.905-2.997 2.376-4.903.47-1.905.706-4.368.706-7.389l.074-31.562c0-1.585-.174-2.639-.52-3.157-.348-.521-1.09-.781-2.228-.781-.594 0-1.25.038-1.969.112-.718.073-1.225.136-1.522.185l-.149-.297.52-3.268h8.021c1.338 0 2.959-.086 4.865-.26 1.905-.173 3.157-.309 3.75-.408zm125.997-19.15H7.548A4.548 4.548 0 0 0 3 71.305v80.967a4.549 4.549 0 0 0 4.548 4.55H202.73a4.549 4.549 0 0 0 4.548-4.55V71.305a4.548 4.548 0 0 0-4.548-4.549z"/></g></svg>
+             <span>James L. Schumacher, DMD</span>
+            </a>
+
+            <div class="flex-nav">
+                <div class="hd-info">
+                    <a href="tel:+19043883559" class="pho" aria-label="phone number"><i class="icon-mobile"></i>(904) 388-3559</a>
+                    <a href="https://goo.gl/maps/1z11D5yv8tvEN2jR8" class="phy" target="_blank"><i class="icon-map-marker"></i>4201 Roosevelt Blvd, <br>
+                        Jacksonville, FL 32210 </a>
+                </div>
+                <div class="hd-btns">
+                    <a href="request-an-appointment.html" class="btn ra"><span>Request</span> an Appointment</a>
+                    <a href="" class="btn-thr fm">Patient Forms</a>
+                    <a href="" class="btn-alt of">Pay Online</a>
+                </div>
+                <nav id="main-nav">
+                    <!-- [cms:buildNav start=null levels=*][level]<ul>[item]<li><a href="$pageURL$" title="$hrefTitle$">$pageName$</a></li>[/item]</ul>[/level][/cms:buildNav]-->
+                    <ul>
+                    {% for item in site.data.navigation %}
+                    <li><a href="{{ item.url }}">
+                        {{ item.name }}
+                      </a>
+                      <ul>
+                        {% for subitem in item.subfolderitems %}
+                        <li><a href="{{ subitem.suburl }}">
+                            {{ subitem.subname }}
+                          </a>
+                        </li>
+                        {% endfor %}
+                      </ul>
+                    </li>
+                    {% endfor %}
+                  </ul>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    {{ content }}
+
+<footer>
+    <section id="find" class="flex-ed">
+        <div id="quest">
+            <div class="h1"><small>Have Questions?</small></div>
+            <div class="h2">Get Answers.</div>
+            <form class="simple" method="post" action="">
+                <div class="contain">
+                    <input type="text" name="name" required="true" placeholder="Name" />
+                    <input type="tel" name="phone" required="true" placeholder="Phone Number" />
+                    <input type="email" name="email" required="true" placeholder="Email Address" />
+                </div>
+                <textarea name="message" placeholder="Questions/Comments"></textarea>
+                <button class="btn">Submit</button>
+                <input type="hidden" name="_subject" value="Ask Us a Question" />
+                <input type="hidden" name="_redirect" value="thanks.html" />
+            </form>
+        </div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6890.3700316834465!2d-81.72523407423039!3d30.288794124281814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ea62b1b000e5f75!2sDr.%20James%20L.%20Schumacher%2C%20DMD!5e0!3m2!1sen!2sus!4v1599673892063!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+         </div>
+
+    </section>
+
+    <div id="fo-contents">
+        <a href="index.html" class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="211" height="187" viewBox="0 0 211 187"><g><g><g><path fill="#fff" d="M210.027 58.232L105.597.09a.706.706 0 0 0-.691 0L.366 58.232c-.64.355-.388 1.331.345 1.331h82.28c-.01-.272-.04-.54-.04-.813 0-12.287 9.958-22.247 22.245-22.247 12.286 0 22.246 9.96 22.246 22.247 0 .274-.032.54-.042.813h82.28c.733 0 .987-.974.347-1.33z"/></g><g><path fill="#fff" d="M149.775 124.415c-1.56 2.203-3.727 3.925-6.498 5.161-2.774 1.236-5.943 1.857-9.507 1.857-2.08 0-3.986-.187-5.72-.558-1.733-.372-3.156-.78-4.27-1.224-1.113-.447-1.671-.694-1.671-.744l-.371-.742c.049-.298.15-1.04.297-2.228.148-1.19.284-2.736.409-4.643.122-1.905.185-3.923.185-6.052l3.342-.372c0 3.714.248 6.462.743 8.244.494 1.783 1.412 3.009 2.748 3.677 1.338.668 3.39 1.001 6.165 1.001 3.118 0 5.618-.729 7.5-2.19 1.882-1.46 2.822-3.452 2.822-5.978 0-1.485-.508-2.821-1.522-4.01a14.856 14.856 0 0 0-3.602-3.046c-1.387-.841-3.442-1.98-6.165-3.416-2.575-1.337-4.678-2.562-6.312-3.676a16.594 16.594 0 0 1-4.122-3.973c-1.114-1.534-1.67-3.316-1.67-5.347 0-2.575.754-4.914 2.264-7.019 1.51-2.105 3.565-3.763 6.165-4.976 2.598-1.212 5.483-1.818 8.652-1.818 1.98 0 3.811.136 5.496.407 1.682.273 3.02.556 4.01.855.99.297 1.608.494 1.856.594l.224.445c-.05.296-.175.992-.371 2.08-.198 1.089-.423 2.6-.67 4.529a109.987 109.987 0 0 0-.594 5.942l-2.895.297-.447-.37c.049-.198.1-.656.15-1.375.047-.717.073-1.547.073-2.488 0-2.623-.644-4.431-1.931-5.421-1.288-.99-3.59-1.486-6.907-1.486-2.723 0-4.964.68-6.721 2.042-1.758 1.363-2.636 3.058-2.636 5.088 0 1.98.853 3.701 2.562 5.162 1.708 1.46 4.22 3.057 7.538 4.789 3.218 1.634 5.668 2.983 7.352 4.048a18.364 18.364 0 0 1 4.456 3.974c1.287 1.584 1.932 3.415 1.932 5.495 0 2.774-.78 5.261-2.34 7.465zM116.428 122c-.47 2.774-.879 5.695-1.224 8.764l-.373.445c-1.435-.1-4.393-.235-8.875-.409-4.48-.174-8.181-.259-11.102-.259-2.327 0-4.445.098-6.35.298-1.906.196-3.107.346-3.602.445l.446-3.417c1.93-.297 3.255-.878 3.972-1.744.718-.866 1.078-2.365 1.078-4.494l.074-31.192c0-1.584-.185-2.648-.556-3.193-.373-.545-1.104-.818-2.192-.818-.496 0-.991.025-1.485.074-.495.05-.842.075-1.04.075l-.148-.297.519-3.268c.595.05 1.708.1 3.343.148 1.633.05 3.291.074 4.975.074 1.337 0 2.86-.086 4.568-.26 1.708-.173 2.834-.309 3.379-.408l-.297 3.342c-1.635.199-2.76.52-3.38.967-.619.444-.991.965-1.112 1.559-.125.594-.261 2.054-.41 4.381-.296 4.208-.52 9.012-.667 14.41-.15 5.397-.225 10.148-.225 14.258 0 1.781.15 3.058.446 3.825.298.767.856 1.275 1.671 1.523.818.246 2.215.37 4.197.37 3.02 0 5.236-.247 6.646-.743 1.412-.494 2.476-1.458 3.194-2.897.718-1.434 1.374-3.736 1.968-6.906l3.268-.371.223.37a420.07 420.07 0 0 0-.929 5.348zM76.733 85.906c-1.239.199-2.13.421-2.674.67-.545.246-.929.63-1.152 1.15-.222.52-.359 1.325-.407 2.413-.2 4.605-.384 9.952-.558 16.042a2489.14 2489.14 0 0 0-.408 15.745c-.05 5.05-1.029 9.098-2.934 12.143-1.907 3.046-4.964 5.432-9.172 7.167l-1.262-2.452.222-.594c2.03-1.237 3.602-2.537 4.717-3.898 1.113-1.362 1.905-2.997 2.376-4.903.47-1.905.706-4.368.706-7.389l.074-31.562c0-1.585-.174-2.639-.52-3.157-.348-.521-1.09-.781-2.228-.781-.594 0-1.25.038-1.969.112-.718.073-1.225.136-1.522.185l-.149-.297.52-3.268h8.021c1.338 0 2.959-.086 4.865-.26 1.905-.173 3.157-.309 3.75-.408zm125.997-19.15H7.548A4.548 4.548 0 0 0 3 71.305v80.967a4.549 4.549 0 0 0 4.548 4.55H202.73a4.549 4.549 0 0 0 4.548-4.55V71.305a4.548 4.548 0 0 0-4.548-4.549z"/></g><g><g><g><text dominant-baseline="text-before-edge" style="line-height:21px;font-kerning:normal" fill="#fff" font-family="'Alegreya-Medium','Alegreya-Medium'" font-size="18" transform="translate(2 165)"><tspan font-family="Alegreya">James L. Schumacher, DMD</tspan></text></g></g></g></g></g></svg></a>
+        <div class="fo-info">
+            <div class="fo-title">Contact Us</div>
+            <a href="https://goo.gl/maps/1z11D5yv8tvEN2jR8" class="phy" target="_blank"><i class="icon-map-marker"></i> 4201 Roosevelt Blvd, <br>Jacksonville, FL 32210</a>
+            <a href="" class="pho"><i class="icon-mobile"></i> (904) 388-3559</a>
+        </div>
+        <div  class="hours">
+            <span class="fo-title">Office Hours</span>
+            <p>
+                <label>Monday</label>8:00 am - 5:00 pm
+                <br />
+                <label>Tuesday</label>8:00 am - 5:00 pm
+                <br />
+                <label>Wednesday</label>8:00 am - 5:00 pm
+                <br />
+                <label>Thursday</label>8:00 am - 2:00 pm
+                <br />
+                <label>Friday</label>Closed
+            </p>
+        </div>
+    </div>
+
+    <div class="ft-btm">
+        <div class="social">
+            <a href="" class="fb" aria-label="facebook"  target="_blank"><i class="icon-facebook"></i></a>
+            <a href="" class="gp" aria-label="google"  target="_blank"><i class="icon-google"></i></a>
+            <a href="" class="yt" aria-label="youtube"   target="_blank"><i class="icon-youtube-play"></i></a>
+            <a href="" class="yp" aria-label="yelp"  target="_blank"><i class="icon-yelp"></i></a>
+        </div>
+        <div id="copy">&copy; 2020 James L. Schumacher, DMD <span>|</span> <a href="sitemap.html">Sitemap</a>  <span>|</span>
+            <a href="privacy-policy.html">Privacy Policy</a>  <span>|</span>  Site designed and maintained by <a href="https://www.tntdental.com" target="_blank">TNT Dental</a>
+        </div>
+    </div>
+
+
+</footer>
+<script src="assets/js/foundation.js"></script>
+<script src="assets/js/scripts.js"></script>
+
+</body>
+</html>
